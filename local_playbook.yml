@@ -93,3 +93,9 @@
 #    - name: Save npm package informations
 #      shell: npm info -g {{ item }} > npm_info/{{ item }}
 #      with_items: npm_result.results | selectattr('changed') | map(attribute='item') | map(attribute='name' | list
+
+    - name: Create a directory of Neobundle
+      file: path=~/.vim/bundle state=directory
+
+    - name: Install Neobundle
+      git: repo=git://github.com/Shougo/neobundle.vim dest=~/.vim/bundle/neobundle.vim accept_hostkey=no
