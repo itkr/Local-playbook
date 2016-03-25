@@ -2,7 +2,7 @@
 - hosts: localhost
   connection: local
   gather_facts: no           
-  sudo: yes
+  sudo: no
   vars:
     homebrew_taps:
       - homebrew/binary
@@ -17,22 +17,22 @@
       - { name: git }
       - { name: pyenv-virtualenv }
       - { name: ansible }
-      - { name: erlang }
+#      - { name: erlang }
       - { name: docker }
       - { name: docker-machine }
-      - { name: redis }
-      - { name: rbenv }
-      - { name: coteditor/coteditor/cot }
+#      - { name: redis }
+#      - { name: rbenv }
+#      - { name: coteditor/coteditor/cot }
       - { name: caskroom/cask/brew-cask }
     homebrew_cask_packages:
       # - { name: vagrant }
       # - { name: virtualbox }
-      - { name: emacs-mac }
+      # - { name: emacs-mac }
       - { name: google-japanese-ime }
-      - { name: coteditor }
+      # - { name: coteditor }
     npm_global_packages:
       - { name: grunt-cli }
-      - { name: react-tools }
+      # - { name: react-tools }
   
   tasks:
     - name: Add homebrew tap repositories
