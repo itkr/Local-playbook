@@ -24,6 +24,7 @@
       - { name: rbenv }
       - { name: coteditor/coteditor/cot }
       - { name: caskroom/cask/brew-cask }
+      - { name: the_silver_searcher }
     homebrew_cask_packages:
       # - { name: vagrant }
       # - { name: virtualbox }
