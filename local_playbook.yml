@@ -2,7 +2,7 @@
 - hosts: localhost
   connection: local
   gather_facts: no           
-  sudo: yes
+  sudo: no
   vars:
     homebrew_taps:
       - homebrew/binary
@@ -17,23 +17,23 @@
       - { name: git }
       - { name: pyenv-virtualenv }
       - { name: ansible }
-      - { name: erlang }
+#      - { name: erlang }
       - { name: docker }
       - { name: docker-machine }
-      - { name: redis }
-      - { name: rbenv }
-      - { name: coteditor/coteditor/cot }
+#      - { name: redis }
+#      - { name: rbenv }
+#      - { name: coteditor/coteditor/cot }
       - { name: caskroom/cask/brew-cask }
       - { name: the_silver_searcher }
     homebrew_cask_packages:
       # - { name: vagrant }
       # - { name: virtualbox }
-      - { name: emacs-mac }
+      # - { name: emacs-mac }
       - { name: google-japanese-ime }
-      - { name: coteditor }
+      # - { name: coteditor }
     npm_global_packages:
       - { name: grunt-cli }
-      - { name: react-tools }
+      # - { name: react-tools }
   
   tasks:
     - name: Add homebrew tap repositories
@@ -94,3 +94,9 @@
 #    - name: Save npm package informations
 #      shell: npm info -g {{ item }} > npm_info/{{ item }}
 #      with_items: npm_result.results | selectattr('changed') | map(attribute='item') | map(attribute='name' | list
+
+    - name: Create a directory of Neobundle
+      file: path=~/.vim/bundle state=directory
+
+    - name: Install Neobundle
+      git: repo=git://github.com/Shougo/neobundle.vim dest=~/.vim/bundle/neobundle.vim accept_hostkey=no
