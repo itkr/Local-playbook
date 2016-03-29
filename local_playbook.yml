@@ -57,13 +57,6 @@
       with_items: homebrew_packages
       register: brew_result
 
-    - name: Create a directory to save homebrew package informations
-      file: path=brew_info state=directory
-
-    - name: Save homebrew package informations
-      shell: brew info {{ item }} > brew_info/{{ item }}
-      with_items: brew_result.results | selectattr('changed') | map(attribute='item') | map(attribute='name') | list
-
     # Homebrew cask
 
     - name: Install Homebrew cask
@@ -74,13 +67,6 @@
       with_items: homebrew_cask_packages
       register: cask_result
 
-    - name: Create a directory to save cask package informations
-      file: path=cask_info state=directory
-
-    - name: Save cask package informations
-      shell: brew cask info {{ item }} > cask_info/{{ item }}
-      with_items: cask_result.results | selectattr('changed') | map(attribute='item') | map(attribute='name') | list
-
     # NPM
 
     - name: Install global npm packages
@@ -88,12 +74,7 @@
       with_items: npm_global_packages
       register: npm_result
 
-    - name: Create a directory to save npm package informations
-      file: path=npm_info state=directory
-
-#    - name: Save npm package informations
-#      shell: npm info -g {{ item }} > npm_info/{{ item }}
-#      with_items: npm_result.results | selectattr('changed') | map(attribute='item') | map(attribute='name' | list
+    # vim
 
     - name: Create a directory of Neobundle
       file: path=~/.vim/bundle state=directory
