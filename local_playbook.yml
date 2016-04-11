@@ -20,6 +20,7 @@
       - { name: erlang }
       - { name: docker }
       - { name: docker-machine }
+      - { name: ssh-copy-id }
 #      - { name: redis }
 #      - { name: rbenv }
 #      - { name: coteditor/coteditor/cot }
