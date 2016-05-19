@@ -112,6 +112,7 @@
 #        - '.bashrc'
         - '.bash_profile'
         - '.gitconfig'
+        - '.gitignore'
         - '.vimrc'
 
     - name: Import Karabiner settings
