@@ -1,4 +1,5 @@
 ---
+# TODO: ssh-keygen
 - hosts: localhost
   connection: local
   gather_facts: no
@@ -11,8 +12,7 @@
       - railwaycat/emacsmacport
       - sanemat/font
     homebrew_packages:
-      # - { name: openssl, state: linked, install_options: force }
-      # - { name: mysql }
+      - { name: mysql }
       - { name: tree }
       - { name: git }
       - { name: pyenv-virtualenv }
@@ -20,30 +20,44 @@
       - { name: erlang }
       - { name: docker }
       - { name: docker-machine }
-#      - { name: redis }
-#      - { name: rbenv }
-#      - { name: coteditor/coteditor/cot }
+      - { name: ssh-copy-id }
+      - { name: redis }
+      - { name: rbenv }
+      - { name: coteditor/coteditor/cot }
       - { name: caskroom/cask/brew-cask }
       - { name: the_silver_searcher }
     homebrew_cask_packages:
-      # - { name: vagrant }
-      # - { name: virtualbox }
-      # - { name: emacs-mac }
+      - { name: vagrant }
+      - { name: virtualbox }
       - { name: google-japanese-ime }
-      # - { name: coteditor }
+      - { name: coteditor }
+      - { name: karaviner }
+      - { name: evernote }
+      - { name: iterm2 }
+      - { name: google-chrome }
     npm_global_packages:
       - { name: grunt-cli }
-      - { name: react-tools }
   
   tasks:
+    # TODO: 冪等性
+    # - name: Agree license
+    #   shell: xcodebuild -license
+
+    # - name: Install Xcode tool
+    #   shell: xcode-select --install
+
+    # Homebrew
+
+    # TODO: 冪等性
+    # - name: Install homebrew
+    #   command: ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
     - name: Add homebrew tap repositories
       homebrew_tap: tap={{ item }} state=present
       with_items: homebrew_taps
 
     - name: Update homebrew
       homebrew: update_homebrew=yes
-
-    # Homebrew
 
     - name: Install homebrew packages
       homebrew: >
@@ -59,12 +73,13 @@
 
     # Homebrew cask
 
-    - name: Install Homebrew cask packages
-      homebrew_cask: name={{ item.name }} state={{ item.state|default('installed') }}
-      with_items: homebrew_cask_packages
-      register: cask_result
+    #- name: Install Homebrew cask packages
+    #  homebrew_cask: name={{ item.name }} state={{ item.state|default('installed') }}
+    #  with_items: homebrew_cask_packages
+    #  register: cask_result
 
     # NPM
+    # TODO: npm自体のインストール
 
     - name: Install global npm packages
       npm: name={{ item.name }} state={{ item.state|default('latest') }} global=yes
@@ -78,3 +93,23 @@
 
     - name: Install Neobundle
       git: repo=git://github.com/Shougo/neobundle.vim dest=~/.vim/bundle/neobundle.vim accept_hostkey=no
+
+    # dotfiles
+
+    - name: Create adirectory of Dotfiles
+      file: path=~/Projects state=directory
+
+    - name: Clone dotfiles
+      git: repo=git@github.com:itkr/dotfiles.git dest=~/Projects/dotfiles
+
+    - name: Copy dotfiles
+      copy: src=~/Projects/dotfiles/{{ item }} dest=~/{{ item }}
+      with_items:
+#        - '.bashrc'
+        - '.bash_profile'
+        - '.gitconfig'
+        - '.vimrc'
+
+    - name: Import Karabiner settings
+      script: ~/Projects/dotfiles/karabiner/karabiner-import.sh
+
