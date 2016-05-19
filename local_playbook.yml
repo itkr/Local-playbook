@@ -35,6 +35,10 @@
       - { name: evernote }
       - { name: iterm2 }
       - { name: google-chrome }
+      - { name: kibito }
+      - { name: sequel-pro }
+      - { name: sqlitebrowser }
+      - { name: pg-commander }
     npm_global_packages:
       - { name: grunt-cli }
   
