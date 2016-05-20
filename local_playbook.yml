@@ -107,7 +107,7 @@
       git: repo=git@github.com:itkr/dotfiles.git dest=~/Projects/dotfiles
 
     - name: Copy dotfiles
-      copy: src=~/Projects/dotfiles/{{ item }} dest=~/{{ item }}
+      copy: src=~/Projects/dotfiles/{{ item }} dest=~/{{ item }} force=no
       with_items:
 #        - '.bashrc'
         - '.bash_profile'
