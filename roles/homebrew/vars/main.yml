@@ -1,39 +1,38 @@
 ---
 homebrew_taps:
+  - caskroom/cask
   - homebrew/binary
   - homebrew/dupes
-  - caskroom/cask
 
 homebrew_packages:
-  - { name: mysql }
-  - { name: tree }
-  - { name: git }
-  - { name: pyenv-virtualenv }
   - { name: ansible }
-  - { name: erlang }
+  - { name: caskroom/cask/brew-cask }
+  - { name: coteditor/coteditor/cot }
   - { name: docker }
   - { name: docker-machine }
-  - { name: ssh-copy-id }
-  - { name: redis }
+  - { name: erlang }
+  - { name: git }
   - { name: mongodb }
-  - { name: rbenv }
-  - { name: coteditor/coteditor/cot }
-  - { name: caskroom/cask/brew-cask }
-  - { name: the_silver_searcher }
+  - { name: mysql }
   - { name: node }
   - { name: nodenv }
+  - { name: pyenv-virtualenv }
+  - { name: redis }
+  - { name: rbenv }
+  - { name: ssh-copy-id }
+  - { name: the_silver_searcher }
+  - { name: tree }
 
 homebrew_cask_packages:
-  - { name: vagrant }
-  - { name: virtualbox }
-  - { name: google-japanese-ime }
   - { name: coteditor }
-  - { name: karaviner }
   - { name: evernote }
-  - { name: iterm2 }
   - { name: google-chrome }
+  - { name: google-japanese-ime }
+  - { name: iterm2 }
+  - { name: karaviner }
   - { name: kobito }
+  - { name: pg-commander }
   - { name: sequel-pro }
   - { name: sqlitebrowser }
-  - { name: pg-commander }
-  - { name: google-chrome }
+  - { name: vagrant }
+  - { name: virtualbox }
