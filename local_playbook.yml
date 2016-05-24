@@ -4,9 +4,9 @@
   gather_facts: no
   become: no
   roles:
-#    - homebrew
+    - homebrew
     - gem
-#    - npm
-#    - vim
-#    - dotfiles
-#    - ssh
+    - npm
+    - vim
+    - dotfiles
+    - ssh
