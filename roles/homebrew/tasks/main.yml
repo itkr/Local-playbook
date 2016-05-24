@@ -16,9 +16,7 @@
       else item.install_options
     }}
   with_items: "{{ homebrew_packages }}"
-  register: brew_result
 
 #- name: Install Homebrew cask packages
 #  homebrew_cask: name={{ item.name }} state={{ item.state|default('installed') }}
 #  with_items: "{{ homebrew_cask_packages }}:
-#  register: cask_result
