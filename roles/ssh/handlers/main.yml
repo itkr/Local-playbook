@@ -1,0 +1,3 @@
+---
+- name: Change SSH key mode
+  file: path=~/.ssh/id_rsa.pub mode=0600

@@ -1,0 +1,10 @@
+---
+- name: Check SSH key
+  stat: path=~/.ssh/id_rsa
+  register: check_ssh_key_result
+
+# TODO: 検証する
+- name: Genarate SSH key
+  command: ssh-keygen -t rsa
+  when: not check_ssh_key_result.stat.exists
+  notify: Change SSH key mode

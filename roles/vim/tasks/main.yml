@@ -1,0 +1,6 @@
+---
+- name: Create a directory of Neobundle
+  file: path=~/.vim/bundle state=directory
+
+- name: Install Neobundle
+  git: repo=git://github.com/Shougo/neobundle.vim dest=~/.vim/bundle/neobundle.vim accept_hostkey=no

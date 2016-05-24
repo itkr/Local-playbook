@@ -1,0 +1,22 @@
+---
+- name: Create adirectory of Dotfiles
+  file: path=~/Projects state=directory
+  ignore_errors: True  # シンボリックリンクにしている場合エラーになるので
+
+- name: Clone dotfiles
+  git: repo=git@github.com:itkr/dotfiles.git dest=~/Projects/dotfiles
+  register: clone_dotfiles_result
+
+- name: Copy dotfiles
+  copy: src=~/Projects/dotfiles/{{ item }} dest=~/{{ item }} force=no
+  with_items:
+    - '.bashrc'
+    - '.bash_profile'
+    - '.gitconfig'
+    - '.gitignore'
+    - '.vimrc'
+  when: clone_dotfiles_result | changed
+
+- name: Import Karabiner settings
+  script: ~/Projects/dotfiles/karabiner/karabiner-import.sh
+  when: clone_dotfiles_result | changed

@@ -1,0 +1,5 @@
+---
+- name: Install global npm packages
+  npm: name={{ item.name }} state={{ item.state|default('latest') }} global=yes
+  with_items: "{{ npm_global_packages }}"
+  register: npm_result
