@@ -1,16 +1,13 @@
 ---
-# TODO: ssh-keygen
 - hosts: localhost
   connection: local
   gather_facts: no
-  sudo: no
+  become: no
   vars:
     homebrew_taps:
       - homebrew/binary
       - homebrew/dupes
       - caskroom/cask
-      - railwaycat/emacsmacport
-      - sanemat/font
     homebrew_packages:
       - { name: mysql }
       - { name: tree }
@@ -22,10 +19,13 @@
       - { name: docker-machine }
       - { name: ssh-copy-id }
       - { name: redis }
+      - { name: mongodb }
       - { name: rbenv }
       - { name: coteditor/coteditor/cot }
       - { name: caskroom/cask/brew-cask }
       - { name: the_silver_searcher }
+      - { name: node }
+      - { name: nodenv }
     homebrew_cask_packages:
       - { name: vagrant }
       - { name: virtualbox }
@@ -35,30 +35,18 @@
       - { name: evernote }
       - { name: iterm2 }
       - { name: google-chrome }
-      - { name: kibito }
+      - { name: kobito }
       - { name: sequel-pro }
       - { name: sqlitebrowser }
       - { name: pg-commander }
+      - { name: google-chrome }
     npm_global_packages:
       - { name: grunt-cli }
   
   tasks:
-    # TODO: 冪等性
-    # - name: Agree license
-    #   shell: xcodebuild -license
-
-    # - name: Install Xcode tool
-    #   shell: xcode-select --install
-
-    # Homebrew
-
-    # TODO: 冪等性
-    # - name: Install homebrew
-    #   command: ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-
     - name: Add homebrew tap repositories
       homebrew_tap: tap={{ item }} state=present
-      with_items: homebrew_taps
+      with_items: "{{ homebrew_taps }}"
 
     - name: Update homebrew
       homebrew: update_homebrew=yes
@@ -72,22 +60,21 @@
           if item.install_options is not string
           else item.install_options
         }}
-      with_items: homebrew_packages
+      with_items: "{{ homebrew_packages }}"
       register: brew_result
 
     # Homebrew cask
 
     #- name: Install Homebrew cask packages
     #  homebrew_cask: name={{ item.name }} state={{ item.state|default('installed') }}
-    #  with_items: homebrew_cask_packages
+    #  with_items: "{{ homebrew_cask_packages }}:
     #  register: cask_result
 
     # NPM
-    # TODO: npm自体のインストール
 
     - name: Install global npm packages
       npm: name={{ item.name }} state={{ item.state|default('latest') }} global=yes
-      with_items: npm_global_packages
+      with_items: "{{ npm_global_packages }}"
       register: npm_result
 
     # vim
@@ -102,19 +89,39 @@
 
     - name: Create adirectory of Dotfiles
       file: path=~/Projects state=directory
+      ignore_errors: True  # シンボリックリンクにしている場合エラーになるので
 
     - name: Clone dotfiles
       git: repo=git@github.com:itkr/dotfiles.git dest=~/Projects/dotfiles
+      register: clone_dotfiles_result
 
     - name: Copy dotfiles
       copy: src=~/Projects/dotfiles/{{ item }} dest=~/{{ item }} force=no
       with_items:
-#        - '.bashrc'
+        - '.bashrc'
         - '.bash_profile'
         - '.gitconfig'
         - '.gitignore'
         - '.vimrc'
+      when: clone_dotfiles_result | changed
 
     - name: Import Karabiner settings
       script: ~/Projects/dotfiles/karabiner/karabiner-import.sh
+      when: clone_dotfiles_result | changed
+
+    # ssh
+
+    - name: Check SSH key
+      stat: path=~/.ssh/id_rsa
+      register: check_ssh_key_result
+
+    # TODO: 検証する
+    - name: Genarate SSH key
+      command: ssh-keygen -t rsa
+      when: not check_ssh_key_result.stat.exists
+      notify: Change SSH key mode
+
+  handlers:
+    - name: Change SSH key mode
+      file: path=~/.ssh/id_rsa.pub mode=0600
 
