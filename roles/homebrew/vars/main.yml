@@ -3,11 +3,11 @@ homebrew_taps:
   - caskroom/cask
   - homebrew/binary
   - homebrew/dupes
+  - coteditor/coteditor
 
 homebrew_packages:
   - { name: ansible }
-  - { name: caskroom/cask/brew-cask }
-  - { name: coteditor/coteditor/cot }
+  - { name: cot }
   - { name: docker }
   - { name: docker-machine }
   - { name: erlang }
@@ -25,6 +25,7 @@ homebrew_packages:
 
 homebrew_cask_packages:
   - { name: coteditor }
+  - { name: dropbox }
   - { name: evernote }
   - { name: google-chrome }
   - { name: google-japanese-ime }
