@@ -4,7 +4,7 @@
   ignore_errors: True  # シンボリックリンクにしている場合エラーになるので
 
 - name: Pull dotfiles
-  git: repo=git@github.com:itkr/dotfiles.git dest=~/Projects/dotfiles
+  git: repo=git@github.com:itkr/dotfiles.git dest=~/Projects/dotfiles version=master
   register: pull_dotfiles_result
 
 - name: Copy dotfiles
