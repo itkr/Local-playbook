@@ -1,14 +1,14 @@
 ---
 - name: Create adirectory of Dotfiles
-  file: path=~/Projects state=directory
+  file: path=/var/tmp state=directory
   ignore_errors: True  # シンボリックリンクにしている場合エラーになるので
 
 - name: Pull dotfiles
-  git: repo=git@github.com:itkr/dotfiles.git dest=~/Projects/dotfiles version=master
+  git: repo=git@github.com:itkr/dotfiles.git dest=/var/tmp/dotfiles version=master
   register: pull_dotfiles_result
 
 - name: Copy dotfiles
-  copy: src=~/Projects/dotfiles/{{ item }} dest=~/{{ item }} force=no
+  copy: src=/var/tmp/dotfiles/{{ item }} dest=~/{{ item }} force=no
   with_items:
     - '.bashrc'
     - '.bash_profile'
@@ -19,5 +19,5 @@
   when: pull_dotfiles_result | changed
 
 - name: Import Karabiner settings
-  script: ~/Projects/dotfiles/karabiner/karabiner-import.sh
+  script: /var/tmp/dotfiles/karabiner/karabiner-import.sh
   when: pull_dotfiles_result | changed
