@@ -15,6 +15,7 @@
     - '.gitconfig'
     - '.gitignore'
     - '.vimrc'
+    - '.bash/'
   when: pull_dotfiles_result | changed
 
 - name: Import Karabiner settings
