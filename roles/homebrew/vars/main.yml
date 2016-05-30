@@ -8,6 +8,7 @@ homebrew_taps:
 homebrew_packages:
   - { name: ansible }
   - { name: cot }
+  - { name: cowsay }
   - { name: docker }
   - { name: docker-machine }
   - { name: erlang }
@@ -37,3 +38,4 @@ homebrew_cask_packages:
   - { name: sqlitebrowser }
   - { name: vagrant }
   - { name: virtualbox }
+
