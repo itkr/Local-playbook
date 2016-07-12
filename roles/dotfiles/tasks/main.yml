@@ -21,3 +21,7 @@
 - name: Import Karabiner settings
   script: /var/tmp/dotfiles/karabiner/karabiner-import.sh
   when: pull_dotfiles_result | changed
+
+- name: Copy Karabiner private.xml
+  copy: src=/var/tmp/dotfiles/karabiner/private.xml dest='~/Library/Application Support/Karabiner/private.xml' force=yes
+  when: pull_dotfiles_result | changed
