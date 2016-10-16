@@ -4,6 +4,7 @@ homebrew_taps:
   - homebrew/binary
   - homebrew/dupes
   - coteditor/coteditor
+  - homebrew/science
 
 homebrew_packages:
   - { name: ansible }
@@ -22,6 +23,7 @@ homebrew_packages:
   - { name: ssh-copy-id }
   - { name: the_silver_searcher }
   - { name: tree }
+  - { name: r }
 
 homebrew_cask_packages:
   - { name: coteditor }
@@ -37,3 +39,4 @@ homebrew_cask_packages:
   - { name: sqlitebrowser }
   - { name: vagrant }
   - { name: virtualbox }
+  - { name: rstudio }
