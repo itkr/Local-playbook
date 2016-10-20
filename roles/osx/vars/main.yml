@@ -27,7 +27,7 @@ osx_settings:
   - {
       domain: com.apple.dock,
       key: tilesize,
-      type: int,
+      type: float,
       value: 64
     }
   # 拡大を無効にする
