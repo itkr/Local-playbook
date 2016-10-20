@@ -9,5 +9,5 @@
     - npm
     - vim
     - dotfiles
-    - ssh
+#    - ssh
     - osx
