@@ -1,0 +1,82 @@
+---
+osx_settings:
+  # Global
+  # フルキーボードアクセスを有効
+  - {
+      domain: NSGlobalDomain,
+      key: AppleKeyboardUIMode,
+      type: int,
+      value: 3
+    }
+  # Fuキーを標準のファンクションキーとして使用しない
+  - {
+      domain: NSGlobalDomain,
+      key: com.apple.keyboard.fnState,
+      type: bool,
+      value: false
+    }
+  # 拡張子を常に表示
+  - {
+      domain: NSGlobalDomain,
+      key: AppleShowAllExtensions,
+      type: bool,
+      value: true
+    }
+  # Dock
+  # サイズ
+  - {
+      domain: com.apple.dock,
+      key: tilesize,
+      type: int,
+      value: 32
+    }
+  # 拡大を無効にする
+  - {
+      domain: com.apple.dock,
+      key: magnification,
+      type: bool,
+      value: false
+    }
+  # Dockを自動的に隠さない
+  - {
+      domain: com.apple.dock,
+      key: autohide,
+      type: bool,
+      value: false
+    }
+  # Finder
+  # デフォルトはカラムビュー表示
+  - {
+      domain: com.apple.finder,
+      key: FXPreferredViewStyle,
+      type: string,
+      value: clmv
+    }
+  # 隠しファイルや隠しフォルダを表示
+  - {
+      domain: com.apple.finder,
+      key: AppleShowAllFiles,
+      type: bool,
+      value: true
+    }
+  # Finderの効果音を無効にする
+  - {
+      domain: com.apple.finder,
+      key: FinderSounds,
+      type: bool,
+      value: false
+    }
+  # Trackpad
+  # タップでクリック
+  - {
+      domain: com.apple.driver.AppleBluetoothMultitouch.trackpad,
+      key: Clicking,
+      type: bool,
+      value: true
+    }
+  - {
+      domain: NSGlobalDomain,
+      key: com.apple.swipescrolldirection,
+      type: bool,
+      value: true
+    }
