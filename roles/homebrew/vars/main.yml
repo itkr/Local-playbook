@@ -31,8 +31,8 @@ homebrew_cask_packages:
   - { name: google-chrome }
   - { name: google-japanese-ime }
   - { name: iterm2 }
-  - { name: karaviner }
-  - { name: kobito }
+  - { name: karabiner }
+#  - { name: kobito }
   - { name: pg-commander }
   - { name: sequel-pro }
   - { name: sqlitebrowser }
