@@ -10,8 +10,6 @@ homebrew_packages:
   - { name: ansible }
   - { name: cot }
   - { name: cowsay }
-  - { name: docker }
-  - { name: docker-machine }
   - { name: erlang }
   - { name: git }
   - { name: mongodb }
@@ -40,5 +38,6 @@ homebrew_cask_packages:
   - { name: sqlitebrowser }
   - { name: vagrant }
   - { name: virtualbox }
+  - { name: docker }
   - { name: rstudio }
 
