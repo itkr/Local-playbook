@@ -40,4 +40,6 @@ homebrew_cask_packages:
   - { name: virtualbox }
   - { name: docker }
   - { name: rstudio }
+  - { name: eclipse-installer }
+  - { name: java }
 

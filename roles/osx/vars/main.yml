@@ -28,7 +28,7 @@ osx_settings:
       domain: com.apple.dock,
       key: tilesize,
       type: float,
-      value: 64
+      value: 50
     }
   # 拡大を無効にする
   - {
@@ -81,3 +81,14 @@ osx_settings:
       type: bool,
       value: false
     }
+  # スクロール方向をナチュラルにしない
+  - {
+      domain: NSGlobalDomain,
+      key: com.apple.swipescrolldirection,
+      type: bool,
+      value: false
+    }
+
+# capslock を controllに
+# keyboardid=$(ioreg -n IOHIDKeyboard -r | grep -E 'VendorID"|ProductID' | awk '{ print $4 }' | paste -s -d'-\n' -)'-0'
+# defaults -currentHost write -g com.apple.keyboard.modifiermapping.${keyboardid} -array '<dict><key>HIDKeyboardModifierMappingDst</key></dict><integer>2</integer> <key>HIDKeyboardModifierMappingSrc</key><key>0</key>'
