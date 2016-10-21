@@ -33,7 +33,6 @@ homebrew_cask_packages:
   - { name: google-cloud-sdk }
   - { name: iterm2 }
   - { name: karabiner }
-#  - { name: kobito }
   - { name: pg-commander }
   - { name: sequel-pro }
   - { name: sqlitebrowser }
@@ -43,4 +42,14 @@ homebrew_cask_packages:
   - { name: rstudio }
   - { name: eclipse-installer }
   - { name: java }
-
+#  - { name: kobito }
+#  - { name: hipchat }
+#  - { name: slack }
+#  - { name: diskwave }
+#  - { name: rdm }
+#  - { name: appcleaner }
+#  - { name: mongohub }
+#  - { name: alfred2 }
+#  - { name: wireshark }
+#  - { name: google-drive }
+#  - { name: amazon-drive }
