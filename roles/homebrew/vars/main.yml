@@ -30,6 +30,7 @@ homebrew_cask_packages:
   - { name: evernote }
   - { name: google-chrome }
   - { name: google-japanese-ime }
+  - { name: google-cloud-sdk }
   - { name: iterm2 }
   - { name: karabiner }
 #  - { name: kobito }
