@@ -71,8 +71,8 @@ osx_settings:
   - {
       domain: com.apple.driver.AppleBluetoothMultitouch.trackpad,
       key: Clicking,
-      type: int,
-      value: 1
+      type: bool,
+      value: true
     }
   # スクロール方向をナチュラルにしない
   - {
