@@ -16,7 +16,7 @@
     - '.gitignore'
     - '.vimrc'
     - '.bash/'
-    - 'com.googlecode.iterm2.plist'
+    - '.iterm2/'
   when: pull_dotfiles_result | changed
 
 - name: Import Karabiner settings
