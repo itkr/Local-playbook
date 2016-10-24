@@ -42,6 +42,7 @@ homebrew_cask_packages:
   - { name: rstudio }
   - { name: eclipse-installer }
   - { name: java }
+  - { name: kindle }
 #  - { name: kobito }
 #  - { name: hipchat }
 #  - { name: slack }
