@@ -24,6 +24,7 @@ homebrew_packages:
   - { name: tree }
   - { name: r }
   - { name: wget }
+  - { name: awscli }
 
 homebrew_cask_packages:
   - { name: coteditor }
