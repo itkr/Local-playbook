@@ -45,6 +45,7 @@ homebrew_cask_packages:
   - { name: eclipse-installer }
   - { name: java }
   - { name: kindle }
+  - { name: alfred }
 #  - { name: kobito }
 #  - { name: hipchat }
 #  - { name: slack }
@@ -52,7 +53,6 @@ homebrew_cask_packages:
 #  - { name: rdm }
 #  - { name: appcleaner }
 #  - { name: mongohub }
-#  - { name: alfred2 }
 #  - { name: wireshark }
 #  - { name: google-drive }
 #  - { name: amazon-drive }
