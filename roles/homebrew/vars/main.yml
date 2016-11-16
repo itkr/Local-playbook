@@ -46,6 +46,7 @@ homebrew_cask_packages:
   - { name: java }
   - { name: kindle }
   - { name: alfred }
+  - { name: android-studio }
 #  - { name: kobito }
 #  - { name: hipchat }
 #  - { name: slack }

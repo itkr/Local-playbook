@@ -53,12 +53,12 @@ osx_settings:
       value: clmv
     }
   # 隠しファイルや隠しフォルダを表示
-  - {
-      domain: com.apple.finder,
-      key: AppleShowAllFiles,
-      type: bool,
-      value: true
-    }
+  #- {
+  #    domain: com.apple.finder,
+  #    key: AppleShowAllFiles,
+  #    type: bool,
+  #    value: true
+  #  }
   # Finderの効果音を無効にする
   - {
       domain: com.apple.finder,
