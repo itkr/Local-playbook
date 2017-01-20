@@ -49,6 +49,7 @@ homebrew_cask_packages:
   - { name: alfred }
   - { name: android-studio }
   - { name: sony-ericsson-bridge }
+  - { name: dash }
 #  - { name: kobito }
 #  - { name: hipchat }
 #  - { name: slack }
