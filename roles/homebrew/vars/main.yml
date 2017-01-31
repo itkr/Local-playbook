@@ -1,62 +1,62 @@
 ---
 homebrew_taps:
   - caskroom/cask
+  - coteditor/coteditor
   - homebrew/binary
   - homebrew/dupes
-  - coteditor/coteditor
   - homebrew/science
 
 homebrew_packages:
   - { name: ansible }
+  - { name: awscli }
   - { name: cot }
   - { name: cowsay }
   - { name: erlang }
   - { name: git }
   - { name: mongodb }
   - { name: mysql }
-  - { name: postgresql }
   - { name: node }
   - { name: nodenv }
+  - { name: postgresql }
   - { name: pyenv-virtualenv }
-  - { name: redis }
+  - { name: r }
   - { name: rbenv }
+  - { name: redis }
   - { name: ssh-copy-id }
   - { name: the_silver_searcher }
   - { name: tree }
-  - { name: r }
   - { name: wget }
-  - { name: awscli }
 
 homebrew_cask_packages:
+  - { name: alfred }
+  - { name: android-studio }
   - { name: coteditor }
+  - { name: dash }
+  - { name: docker }
   - { name: dropbox }
+  - { name: eclipse-installer }
   - { name: evernote }
   - { name: google-chrome }
-  - { name: google-japanese-ime }
   - { name: google-cloud-sdk }
+  - { name: google-japanese-ime }
   - { name: iterm2 }
+  - { name: java }
   - { name: karabiner }
+  - { name: kindle }
   - { name: pg-commander }
+  - { name: rstudio }
   - { name: sequel-pro }
+  - { name: sony-ericsson-bridge }
   - { name: sqlitebrowser }
   - { name: vagrant }
   - { name: virtualbox }
-  - { name: docker }
-  - { name: rstudio }
-  - { name: eclipse-installer }
-  - { name: java }
-  - { name: kindle }
-  - { name: alfred }
-  - { name: android-studio }
-  - { name: sony-ericsson-bridge }
-  - { name: dash }
-#  - { name: kobito }
-#  - { name: hipchat }
-#  - { name: slack }
-#  - { name: diskwave }
-#  - { name: rdm }
-#  - { name: appcleaner }
-#  - { name: mongohub }
-#  - { name: wireshark }
-#  - { name: google-drive }
 #  - { name: amazon-drive }
+#  - { name: appcleaner }
+#  - { name: diskwave }
+#  - { name: google-drive }
+#  - { name: hipchat }
+#  - { name: kobito }
+#  - { name: mongohub }
+#  - { name: rdm }
+#  - { name: slack }
+#  - { name: wireshark }
