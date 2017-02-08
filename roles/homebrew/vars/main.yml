@@ -32,6 +32,7 @@ homebrew_cask_packages:
   - { name: alfred }
   - { name: android-studio }
   - { name: coteditor }
+  - { name: ctags }
   - { name: dash }
   - { name: docker }
   - { name: dropbox }
