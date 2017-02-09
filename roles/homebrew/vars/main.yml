@@ -11,6 +11,7 @@ homebrew_packages:
   - { name: awscli }
   - { name: cot }
   - { name: cowsay }
+  - { name: ctags }
   - { name: erlang }
   - { name: git }
   - { name: mongodb }
@@ -26,13 +27,13 @@ homebrew_packages:
   - { name: the_silver_searcher }
   - { name: tmux }
   - { name: tree }
+  - { name: vim }
   - { name: wget }
 
 homebrew_cask_packages:
   - { name: alfred }
   - { name: android-studio }
   - { name: coteditor }
-  - { name: ctags }
   - { name: dash }
   - { name: docker }
   - { name: dropbox }
