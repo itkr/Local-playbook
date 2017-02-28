@@ -47,6 +47,7 @@ homebrew_cask_packages:
   - { name: karabiner }
   - { name: kindle }
   - { name: pg-commander }
+  - { name: pycharm-ce }
   - { name: rstudio }
   - { name: sequel-pro }
   - { name: sony-ericsson-bridge }
