@@ -10,11 +10,14 @@
 - name: Copy dotfiles
   copy: src=/var/tmp/dotfiles/{{ item }} dest=~/{{ item }} force=no
   with_items:
-    - '.bashrc'
     - '.bash_profile'
+    - '.bashrc'
     - '.gitconfig'
     - '.gitignore'
+    - '.ideavimrc'
     - '.vimrc'
+    - '.vrapperrc'
+    - '.zshrc'
     - '.bash/'
     - '.iterm2/'
   when: pull_dotfiles_result | changed
