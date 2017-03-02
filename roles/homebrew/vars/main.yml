@@ -18,6 +18,7 @@ homebrew_packages:
   - { name: mysql }
   - { name: node }
   - { name: nodenv }
+  - { name: peco }
   - { name: postgresql }
   - { name: pyenv-virtualenv }
   - { name: r }
@@ -61,6 +62,7 @@ homebrew_cask_packages:
 #  - { name: hipchat }
 #  - { name: kobito }
 #  - { name: mongohub }
+#  - { name: pycharm }
 #  - { name: rdm }
 #  - { name: slack }
 #  - { name: wireshark }
