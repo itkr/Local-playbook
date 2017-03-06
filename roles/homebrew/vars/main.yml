@@ -40,6 +40,7 @@ homebrew_cask_packages:
   - { name: dropbox }
   - { name: eclipse-installer }
   - { name: evernote }
+  - { name: gogland-eap }  # TODO: 安定版が出たら安定版を指定する
   - { name: google-chrome }
   - { name: google-cloud-sdk }
   - { name: google-japanese-ime }
@@ -55,6 +56,7 @@ homebrew_cask_packages:
   - { name: sqlitebrowser }
   - { name: vagrant }
   - { name: virtualbox }
+  - { name: visual-studio-code }
 #  - { name: amazon-drive }
 #  - { name: appcleaner }
 #  - { name: diskwave }
