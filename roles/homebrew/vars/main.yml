@@ -15,6 +15,7 @@ homebrew_packages:
   - { name: erlang }
   - { name: ghq }
   - { name: git }
+  - { name: glide }
   - { name: mongodb }
   - { name: mysql }
   - { name: node }
