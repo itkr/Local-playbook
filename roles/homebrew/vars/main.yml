@@ -50,6 +50,7 @@ homebrew_cask_packages:
   - { name: java }
   - { name: karabiner }
   - { name: kindle }
+  - { name: macvim }
   - { name: pg-commander }
   - { name: pycharm-ce }
   - { name: rstudio }
@@ -58,6 +59,7 @@ homebrew_cask_packages:
   - { name: sqlitebrowser }
   - { name: vagrant }
   - { name: virtualbox }
+  - { name: visual-studio }
   - { name: visual-studio-code }
 #  - { name: amazon-drive }
 #  - { name: appcleaner }
