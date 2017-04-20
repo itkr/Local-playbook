@@ -16,6 +16,7 @@ homebrew_packages:
   - { name: ghq }
   - { name: git }
   - { name: glide }
+  - { name: jq }
   - { name: mongodb }
   - { name: mysql }
   - { name: node }
@@ -64,11 +65,13 @@ homebrew_cask_packages:
   - { name: visual-studio-code }
 #  - { name: amazon-drive }
 #  - { name: appcleaner }
+#  - { name: arduino }
 #  - { name: diskwave }
 #  - { name: google-drive }
 #  - { name: hipchat }
 #  - { name: kobito }
 #  - { name: mongohub }
+#  - { name: processing }
 #  - { name: pycharm }
 #  - { name: rdm }
 #  - { name: slack }
