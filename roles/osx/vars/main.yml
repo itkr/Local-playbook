@@ -8,7 +8,7 @@ osx_settings:
       type: int,
       value: 3
     }
-  # Fuキーを標準のファンクションキーとして使用しない
+  # Fnキーを標準のファンクションキーとして使用しない
   - {
       domain: NSGlobalDomain,
       key: com.apple.keyboard.fnState,
@@ -52,13 +52,13 @@ osx_settings:
       type: string,
       value: clmv
     }
-  # 隠しファイルや隠しフォルダを表示
-  #- {
-  #    domain: com.apple.finder,
-  #    key: AppleShowAllFiles,
-  #    type: bool,
-  #    value: true
-  #  }
+  # 隠しファイルや隠しフォルダを表示しない
+  - {
+      domain: com.apple.finder,
+      key: AppleShowAllFiles,
+      type: bool,
+      value: false
+    }
   # Finderの効果音を無効にする
   - {
       domain: com.apple.finder,
@@ -73,13 +73,6 @@ osx_settings:
       key: Clicking,
       type: bool,
       value: true
-    }
-  # スクロール方向をナチュラルにしない
-  - {
-      domain: NSGlobalDomain,
-      key: com.apple.swipescrolldirection,
-      type: bool,
-      value: false
     }
   # スクロール方向をナチュラルにしない
   - {
