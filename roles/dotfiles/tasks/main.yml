@@ -29,3 +29,8 @@
 - name: Copy Karabiner private.xml
   copy: src=/var/tmp/dotfiles/karabiner/private.xml dest='~/Library/Application Support/Karabiner/private.xml' force=yes
   when: pull_dotfiles_result | changed
+
+- name: Create pypi settings
+  template: >
+    src=etc/.pypirc.j2
+    dest=~/.pypirc

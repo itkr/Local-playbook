@@ -3,6 +3,11 @@
   connection: local
   gather_facts: no
   become: no
+  vars_prompt:
+    - name: pypi_password
+      prompt: "pypi password"
+      private: yes
+      confirm: yes
   roles:
     - homebrew
     - gem
