@@ -67,12 +67,14 @@ osx_settings:
       value: false
     }
   # Trackpad
-  # タップでクリック   defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -int 1
+  # タップでクリック
   - {
       domain: com.apple.driver.AppleBluetoothMultitouch.trackpad,
       key: Clicking,
-      type: bool,
-      value: true
+      # type: bool,
+      type: int,
+      # value: true
+      value: 1
     }
   # スクロール方向をナチュラルにしない
   - {
