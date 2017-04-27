@@ -4,7 +4,7 @@
 # pass
 
 # Activate Xcode
-xcodebuild -license
+sudo xcodebuild -license
 xcode-select --install
 
 # Install homebrew
