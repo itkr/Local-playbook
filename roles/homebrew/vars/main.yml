@@ -35,7 +35,7 @@ homebrew_packages:
   - { name: wget }
 
 homebrew_cask_packages:
-  - { name: alfred }
+  - { name: alfred }  # TODO: パスワードを聞かれた理由
   - { name: android-studio }
   - { name: coteditor }
   - { name: dash }
@@ -44,13 +44,13 @@ homebrew_cask_packages:
   - { name: eclipse-installer }
   - { name: evernote }
   - { name: gitter }
-  - { name: gogland-eap }  # TODO: 安定版が出たら安定版を指定する
+  - { name: gogland }
   - { name: google-chrome }
   - { name: google-cloud-sdk }
-  - { name: google-japanese-ime }
+  - { name: google-japanese-ime }  # TODO: パスワードを聞かれた理由
   - { name: iterm2 }
   - { name: java }
-  - { name: karabiner }
+  - { name: karabiner }  # TODO: failed の理由
   - { name: kindle }
   - { name: macvim }
   - { name: michaelvillar-timer }
@@ -61,7 +61,7 @@ homebrew_cask_packages:
   - { name: sony-ericsson-bridge }
   - { name: sqlitebrowser }
   - { name: vagrant }
-  - { name: virtualbox }
+  - { name: virtualbox }  # TODO: パスワードを聞かれた理由
   - { name: visual-studio-code }
 #  - { name: amazon-drive }
 #  - { name: appcleaner }

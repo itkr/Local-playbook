@@ -8,7 +8,7 @@
       prompt: "pypi password"
       private: yes
       confirm: yes
-  roles:
+  roles:  # TODO: 各roleが終わるとplaybookが終了してしまう
     - homebrew
     - gem
     - npm
