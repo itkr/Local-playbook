@@ -1,0 +1,4 @@
+---
+- name: Add homebrew tap repositories
+  command: go get {{ item }}
+  with_items: "{{ go_packages }}"

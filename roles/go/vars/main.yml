@@ -1,0 +1,4 @@
+---
+go_packages:
+  - github.com/mattn/memo
+  - github.com/motemen/ghq
