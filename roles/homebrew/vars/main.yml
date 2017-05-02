@@ -37,8 +37,10 @@ homebrew_packages:
 homebrew_cask_packages:
   - { name: alfred }  # TODO: パスワードを聞かれた理由
   - { name: android-studio }
+  - { name: appcleaner }
   - { name: coteditor }
   - { name: dash }
+  - { name: diskwave }
   - { name: docker }
   - { name: dropbox }
   - { name: eclipse-installer }
@@ -53,6 +55,7 @@ homebrew_cask_packages:
   - { name: karabiner }  # TODO: failed の理由
   - { name: kindle }
   - { name: macvim }
+  - { name: mas }
   - { name: michaelvillar-timer }
   - { name: pg-commander }
   - { name: pycharm-ce }
@@ -64,9 +67,7 @@ homebrew_cask_packages:
   - { name: virtualbox }  # TODO: パスワードを聞かれた理由
   - { name: visual-studio-code }
 #  - { name: amazon-drive }
-#  - { name: appcleaner }
 #  - { name: arduino }
-#  - { name: diskwave }
 #  - { name: google-drive }
 #  - { name: hipchat }
 #  - { name: kobito }
