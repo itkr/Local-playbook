@@ -1,4 +1,13 @@
 ---
-- name: Add homebrew tap repositories
-  command: go get {{ item }}
+- name: Check go packages
+  command: go list {{ item }}
+  register: go_package_check_result
+  failed_when: go_package_check_result.rc not in [0, 1]
+  changed_when: go_package_check_result.rc not in [0, 1]
   with_items: "{{ go_packages }}"
+
+- name: Add go packages
+  command: go get {{ item.item }}
+  when: item.rc == 1
+  with_items: "{{go_package_check_result.results}}"
+  # with_items: "{{ go_packages }}"

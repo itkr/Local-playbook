@@ -1,9 +1,11 @@
 ---
 go_packages:
+  - github.com/mattn/go-isatty
   - github.com/mattn/go-sqlite3
   - github.com/mattn/memo
   - github.com/motemen/ghq
+  - github.com/tcnksm/go-latest
   - golang.org/x/oauth2/google
-  - google.golang.org/api/bigquery/v
+  - google.golang.org/api/bigquery/v2
   - google.golang.org/appengine
   - gopkg.in/go-playground/validator.v9
