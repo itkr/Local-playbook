@@ -7,5 +7,6 @@ http://docs.ansible.com/ansible/intro_installation.html
 ## Usage
 
 ```
-ansible-playbook local_playbook.yml
+# Max OS X
+ansible-playbook osx_playbook.yml
 ```
