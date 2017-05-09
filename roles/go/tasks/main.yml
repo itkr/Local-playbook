@@ -10,4 +10,3 @@
   command: go get {{ item.item }}
   when: item.rc == 1
   with_items: "{{go_package_check_result.results}}"
-  # with_items: "{{ go_packages }}"
