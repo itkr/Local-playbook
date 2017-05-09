@@ -13,6 +13,8 @@ homebrew_packages:
   - { name: cowsay }
   - { name: ctags }
   - { name: erlang }
+  - { name: fish }
+  - { name: fzf }
   - { name: ghq }
   - { name: git }
   - { name: glide }
