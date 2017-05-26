@@ -78,6 +78,7 @@ homebrew_cask_packages:
 #  - { name: pycharm }
 #  - { name: rdm }
 #  - { name: slack }
+#  - { name: vimpager }
 #  - { name: visual-studio }
 #  - { name: vlc }
 #  - { name: wireshark }
