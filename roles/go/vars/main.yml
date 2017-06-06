@@ -1,6 +1,7 @@
 ---
 go_packages:
   - github.com/PuerkitoBio/goquery
+  - github.com/aws/aws-sdk-go
   - github.com/dustin/go-humanize
   - github.com/golang/lint/golint
   - github.com/mattn/go-isatty
