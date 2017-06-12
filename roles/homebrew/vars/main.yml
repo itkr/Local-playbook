@@ -30,6 +30,7 @@ homebrew_packages:
   - { name: rbenv }
   - { name: redis }
   - { name: ssh-copy-id }
+  - { name: textql }
   - { name: the_silver_searcher }
   - { name: tmux }
   - { name: tree }
