@@ -66,6 +66,7 @@ homebrew_cask_packages:
   - { name: sequel-pro }
   - { name: sony-ericsson-bridge }
   - { name: sqlitebrowser }
+  - { name: steam }
   - { name: vagrant }
   - { name: virtualbox }  # TODO: パスワードを聞かれた理由
   - { name: visual-studio-code }
