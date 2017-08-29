@@ -64,6 +64,7 @@ homebrew_cask_packages:
   - { name: pycharm-ce }
   - { name: rstudio }
   - { name: sequel-pro }
+  - { name: showyedge }
   - { name: sony-ericsson-bridge }
   - { name: sqlitebrowser }
   - { name: steam }
