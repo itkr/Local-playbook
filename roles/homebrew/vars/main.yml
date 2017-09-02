@@ -19,6 +19,7 @@ homebrew_packages:
   - { name: git }
   - { name: glide }
   - { name: jq }
+  - { name: kotlin }
   - { name: mongodb }
   - { name: mysql }
   - { name: node }
