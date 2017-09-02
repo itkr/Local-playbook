@@ -15,6 +15,7 @@
     - '.gitconfig'
     - '.gitignore'
     - '.ideavimrc'
+    - '.tmux.conf'
     - '.vimrc'
     - '.vrapperrc'
     - '.zshrc'
