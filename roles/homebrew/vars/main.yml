@@ -19,6 +19,7 @@ homebrew_packages:
   - { name: git }
   - { name: glide }
   - { name: jq }
+  - { name: kotlin }
   - { name: mongodb }
   - { name: mysql }
   - { name: node }
@@ -54,6 +55,7 @@ homebrew_cask_packages:
   - { name: google-cloud-sdk }
   - { name: google-japanese-ime }  # TODO: パスワードを聞かれた理由
   - { name: hyperswitch }
+  - { name: intellij-idea-ce }
   - { name: iterm2 }
   - { name: java }
   - { name: karabiner }  # TODO: failed の理由
@@ -65,6 +67,7 @@ homebrew_cask_packages:
   - { name: pycharm-ce }
   - { name: rstudio }
   - { name: sequel-pro }
+  - { name: showyedge }
   - { name: sony-ericsson-bridge }
   - { name: sqlitebrowser }
   - { name: steam }
