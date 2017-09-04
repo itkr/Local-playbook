@@ -53,6 +53,7 @@ homebrew_cask_packages:
   - { name: google-chrome }
   - { name: google-cloud-sdk }
   - { name: google-japanese-ime }  # TODO: パスワードを聞かれた理由
+  - { name: hyperswitch }
   - { name: iterm2 }
   - { name: java }
   - { name: karabiner }  # TODO: failed の理由
