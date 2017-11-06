@@ -19,6 +19,8 @@ homebrew_packages:
   - { name: ghq }
   - { name: git }
   - { name: glide }
+  - { name: hadoop }
+  - { name: hive }
   - { name: jq }
   - { name: kotlin }
   - { name: mongodb }
