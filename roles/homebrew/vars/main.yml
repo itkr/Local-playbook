@@ -8,6 +8,7 @@ homebrew_taps:
 
 homebrew_packages:
   - { name: ansible }
+  - { name: apache-spark }
   - { name: awscli }
   - { name: coreutils }
   - { name: cot }
