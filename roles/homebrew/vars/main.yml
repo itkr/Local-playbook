@@ -8,7 +8,6 @@ homebrew_taps:
 
 homebrew_packages:
   - { name: ansible }
-  - { name: apache-spark }
   - { name: awscli }
   - { name: coreutils }
   - { name: cot }
@@ -20,8 +19,6 @@ homebrew_packages:
   - { name: ghq }
   - { name: git }
   - { name: glide }
-  - { name: hadoop }
-  - { name: hive }
   - { name: jq }
   - { name: kotlin }
   - { name: mongodb }
@@ -41,6 +38,10 @@ homebrew_packages:
   - { name: tree }
   - { name: vim }
   - { name: wget }
+  # 重い
+  - { name: hadoop }
+  - { name: hive }
+  - { name: apache-spark }
 
 homebrew_cask_packages:
   - { name: alfred }  # TODO: パスワードを聞かれた理由
