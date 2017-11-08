@@ -13,6 +13,7 @@ homebrew_packages:
   - { name: cot }
   - { name: cowsay }
   - { name: ctags }
+  - { name: embulk }
   - { name: erlang }
   - { name: fish }
   - { name: fzf }
