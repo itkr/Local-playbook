@@ -75,6 +75,7 @@ homebrew_cask_packages:
   - { name: rstudio }
   - { name: sequel-pro }
   - { name: showyedge }
+  - { name: slack }
   - { name: sony-ericsson-bridge }
   - { name: sqlitebrowser }
   - { name: steam }
@@ -90,7 +91,6 @@ homebrew_cask_packages:
 #  - { name: processing }
 #  - { name: pycharm }
 #  - { name: rdm }
-#  - { name: slack }
 #  - { name: vimpager }
 #  - { name: visual-studio }
 #  - { name: vlc }
