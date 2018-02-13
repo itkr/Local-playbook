@@ -47,27 +47,25 @@ homebrew_packages:
   - { name: wget }
 
 homebrew_cask_packages:
-  - { name: alfred }  # TODO: パスワードを聞かれた理由
+  - { name: alfred }
   - { name: android-file-transfer }
   - { name: android-studio }
   - { name: appcleaner }
   - { name: coteditor }
   - { name: dash }
-  - { name: diskwave }
   - { name: docker }
   - { name: dropbox }
   - { name: eclipse-installer }
   - { name: evernote }
   - { name: gitter }
-  - { name: gogland }
   - { name: google-chrome }
   - { name: google-cloud-sdk }
-  - { name: google-japanese-ime }  # TODO: パスワードを聞かれた理由
+  - { name: google-japanese-ime }
   - { name: hyperswitch }
   - { name: intellij-idea-ce }
   - { name: iterm2 }
   - { name: java }
-  - { name: karabiner }  # TODO: failed の理由
+  - { name: karabiner-elements }
   - { name: kindle }
   - { name: macvim }
   - { name: mas }
@@ -77,22 +75,22 @@ homebrew_cask_packages:
   - { name: rstudio }
   - { name: sequel-pro }
   - { name: showyedge }
+  - { name: slack }
   - { name: sony-ericsson-bridge }
   - { name: sqlitebrowser }
-  - { name: steam }
   - { name: vagrant }
-  - { name: virtualbox }  # TODO: パスワードを聞かれた理由
+  - { name: virtualbox }
   - { name: visual-studio-code }
 #  - { name: amazon-drive }
 #  - { name: arduino }
+#  - { name: diskwave }
+#  - { name: gogland }
 #  - { name: google-drive }
 #  - { name: hipchat }
-#  - { name: kobito }
 #  - { name: mongohub }
 #  - { name: processing }
-#  - { name: pycharm }
 #  - { name: rdm }
-#  - { name: slack }
+#  - { name: steam }
 #  - { name: vimpager }
 #  - { name: visual-studio }
 #  - { name: vlc }
