@@ -33,6 +33,7 @@ homebrew_packages:
   - { name: peco }
   - { name: postgresql }
   - { name: presto }
+  - { name: pstree }
   - { name: pyenv-virtualenv }
   - { name: r }
   - { name: rbenv }
@@ -47,6 +48,7 @@ homebrew_packages:
 
 homebrew_cask_packages:
   - { name: alfred }  # TODO: パスワードを聞かれた理由
+  - { name: android-file-transfer }
   - { name: android-studio }
   - { name: appcleaner }
   - { name: coteditor }
