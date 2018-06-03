@@ -1,8 +1,9 @@
 ---
-- name: Install vim-plug
-  get_url:
-    url: https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-    dest: ~/.vim/autoload/plug.vim
+# TODO: 削除
+# - name: Install vim-plug
+#  get_url:
+#    url: https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+#    dest: ~/.vim/autoload/plug.vim
 # Neobundle を使う
 #- name: Create a directory of Neobundle
 #  file: path=~/.vim/bundle state=directory

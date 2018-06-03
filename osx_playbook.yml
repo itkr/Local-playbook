@@ -13,7 +13,6 @@
     - gem
     - npm
     - dotfiles
-    - vim
 #    - ssh
     - osx
     - go
