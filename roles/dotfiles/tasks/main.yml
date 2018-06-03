@@ -1,15 +1,15 @@
 ---
 - name: Create adirectory of Dotfiles
-  file: path=/var/tmp state=directory
+  file: path=~/.ghq/github.com/itkr state=directory
   ignore_errors: True  # シンボリックリンクにしている場合エラーになるので
 
 # TODO: リポジトリ一緒にしても良いかも
 - name: Pull dotfiles
-  git: repo=https://github.com/itkr/dotfiles.git dest=/var/tmp/dotfiles version=master
+  git: repo=https://github.com/itkr/dotfiles.git dest=~/.ghq/github.com/itkr/dotfiles version=master
   register: pull_dotfiles_result
 
 - name: Copy dotfiles
-  copy: src=/var/tmp/dotfiles/{{ item }} dest=~/{{ item }} force=no
+  copy: src=~/.ghq/github.com/itkr/dotfiles/{{ item }} dest=~/{{ item }} force=no
   with_items:
     - '.bash_profile'
     - '.bashrc'
