@@ -14,6 +14,7 @@ homebrew_packages:
   - { name: cot }
   - { name: cowsay }
   - { name: ctags }
+  - { name: dnsmasq }
   - { name: embulk }
   - { name: erlang }
   - { name: fish }
