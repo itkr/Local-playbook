@@ -1,10 +1,10 @@
 ---
 homebrew_taps:
-  - caskroom/cask
+  # - caskroom/cask
   - coteditor/coteditor
-  - homebrew/binary
-  - homebrew/dupes
-  - homebrew/science
+  # - homebrew/binary
+  # - homebrew/dupes
+  # - homebrew/science
 
 homebrew_packages:
   - { name: ansible }
@@ -12,7 +12,6 @@ homebrew_packages:
   - { name: awscli }
   - { name: coreutils }
   - { name: cot }
-  - { name: cowsay }
   - { name: ctags }
   - { name: embulk }
   - { name: erlang }
@@ -22,10 +21,12 @@ homebrew_packages:
   - { name: ghq }
   - { name: git }
   - { name: glide }
+  - { name: go }
   - { name: hadoop }
   - { name: hive }
   - { name: jq }
   - { name: kotlin }
+  - { name: mas }
   - { name: mongodb }
   - { name: mysql }
   - { name: node }
@@ -45,30 +46,24 @@ homebrew_packages:
   - { name: tree }
   - { name: vim }
   - { name: wget }
+  # - { name: cowsay }
 
 homebrew_cask_packages:
+  - { name: java }  # 依存するものがあるのでjavaは最初
   - { name: alfred }
-  - { name: android-file-transfer }
   - { name: android-studio }
   - { name: appcleaner }
   - { name: coteditor }
   - { name: dash }
   - { name: docker }
   - { name: dropbox }
-  - { name: eclipse-installer }
-  - { name: evernote }
-  - { name: gitter }
   - { name: google-chrome }
   - { name: google-cloud-sdk }
   - { name: google-japanese-ime }
   - { name: hyperswitch }
-  - { name: intellij-idea-ce }
   - { name: iterm2 }
-  - { name: java }
-  - { name: karabiner-elements }
   - { name: kindle }
   - { name: macvim }
-  - { name: mas }
   - { name: michaelvillar-timer }
   - { name: pg-commander }
   - { name: pycharm-ce }
@@ -76,22 +71,28 @@ homebrew_cask_packages:
   - { name: sequel-pro }
   - { name: showyedge }
   - { name: slack }
-  - { name: sony-ericsson-bridge }
   - { name: sqlitebrowser }
   - { name: vagrant }
-  - { name: virtualbox }
   - { name: visual-studio-code }
+  - { name: vlc }
 #  - { name: amazon-drive }
+#  - { name: android-file-transfer }
 #  - { name: arduino }
 #  - { name: diskwave }
+#  - { name: eclipse-installer }
+#  - { name: evernote }
+#  - { name: gitter }
 #  - { name: gogland }
 #  - { name: google-drive }
 #  - { name: hipchat }
+#  - { name: intellij-idea-ce }
+#  - { name: karabiner-elements }
 #  - { name: mongohub }
 #  - { name: processing }
 #  - { name: rdm }
+#  - { name: sony-ericsson-bridge }
 #  - { name: steam }
 #  - { name: vimpager }
+#  - { name: virtualbox }  # vagrang入れたら入る？
 #  - { name: visual-studio }
-#  - { name: vlc }
 #  - { name: wireshark }

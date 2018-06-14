@@ -11,6 +11,7 @@ go_packages:
   - github.com/motemen/ghq
   - github.com/motemen/gore
   - github.com/tcnksm/go-latest
+  - github.com/yyoshiki41/radigo
   - golang.org/x/oauth2/google
   - google.golang.org/api/bigquery/v2
   - google.golang.org/appengine
