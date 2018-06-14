@@ -13,6 +13,7 @@ homebrew_packages:
   - { name: coreutils }
   - { name: cot }
   - { name: ctags }
+  - { name: dnsmasq }
   - { name: embulk }
   - { name: erlang }
   - { name: fish }
