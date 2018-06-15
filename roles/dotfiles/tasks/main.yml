@@ -8,6 +8,7 @@
   git: repo=https://github.com/itkr/dotfiles.git dest=~/.ghq/github.com/itkr/dotfiles version=master
   register: pull_dotfiles_result
 
+# TODO: シンボリックリンクにする？
 - name: Copy dotfiles
   copy: src=~/.ghq/github.com/itkr/dotfiles/{{ item }} dest=~/{{ item }} force=no
   with_items:
@@ -25,11 +26,11 @@
   when: pull_dotfiles_result | changed
 
 - name: Import Karabiner settings
-  script: /var/tmp/dotfiles/karabiner/karabiner-import.sh
+  script: ~/.ghq/github.com/itkr/dotfiles/karabiner/karabiner-import.sh
   when: pull_dotfiles_result | changed
 
 - name: Copy Karabiner private.xml
-  copy: src=/var/tmp/dotfiles/karabiner/private.xml dest='~/Library/Application Support/Karabiner/private.xml' force=yes
+  copy: src=~/.ghq/github.com/itkr/dotfiles/karabiner/private.xml dest='~/Library/Application Support/Karabiner/private.xml' force=yes
   when: pull_dotfiles_result | changed
 
 - name: Create pypi settings
