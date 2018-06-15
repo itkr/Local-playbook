@@ -1,7 +1,7 @@
 ---
 homebrew_taps:
-  # - caskroom/cask
   - coteditor/coteditor
+  # - caskroom/cask
   # - homebrew/binary
   # - homebrew/dupes
   # - homebrew/science
@@ -18,7 +18,6 @@ homebrew_packages:
   - { name: erlang }
   - { name: fish }
   - { name: fzf }
-  - { name: gdp }
   - { name: ghq }
   - { name: git }
   - { name: glide }
@@ -48,6 +47,7 @@ homebrew_packages:
   - { name: vim }
   - { name: wget }
   # - { name: cowsay }
+  # - { name: gdp }
 
 homebrew_cask_packages:
   - { name: java }  # 依存するものがあるのでjavaは最初
@@ -76,24 +76,24 @@ homebrew_cask_packages:
   - { name: vagrant }
   - { name: visual-studio-code }
   - { name: vlc }
-#  - { name: amazon-drive }
-#  - { name: android-file-transfer }
-#  - { name: arduino }
-#  - { name: diskwave }
-#  - { name: eclipse-installer }
-#  - { name: evernote }
-#  - { name: gitter }
-#  - { name: gogland }
-#  - { name: google-drive }
-#  - { name: hipchat }
-#  - { name: intellij-idea-ce }
-#  - { name: karabiner-elements }
-#  - { name: mongohub }
-#  - { name: processing }
-#  - { name: rdm }
-#  - { name: sony-ericsson-bridge }
-#  - { name: steam }
-#  - { name: vimpager }
-#  - { name: virtualbox }  # vagrang入れたら入る？
-#  - { name: visual-studio }
-#  - { name: wireshark }
+  # - { name: amazon-drive }
+  # - { name: android-file-transfer }
+  # - { name: arduino }
+  # - { name: diskwave }
+  # - { name: eclipse-installer }
+  # - { name: evernote }
+  # - { name: gitter }
+  # - { name: gogland }
+  # - { name: google-drive }
+  # - { name: hipchat }
+  # - { name: intellij-idea-ce }
+  # - { name: karabiner-elements }
+  # - { name: mongohub }
+  # - { name: processing }
+  # - { name: rdm }
+  # - { name: sony-ericsson-bridge }
+  # - { name: steam }
+  # - { name: vimpager }
+  # - { name: virtualbox }  # vagrang入れたら入る？
+  # - { name: visual-studio }
+  # - { name: wireshark }
