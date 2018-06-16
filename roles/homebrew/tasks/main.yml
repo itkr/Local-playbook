@@ -9,6 +9,7 @@
 - name: Install Homebrew cask packages
   homebrew_cask: name={{ item.name }} state={{ item.state|default('installed') }}
   with_items: "{{ homebrew_cask_packages }}"
+  ignore_errors: True
 
 - name: Install homebrew packages
   homebrew: >
@@ -20,3 +21,4 @@
       else item.install_options
     }}
   with_items: "{{ homebrew_packages }}"
+  ignore_errors: True

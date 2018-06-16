@@ -1,4 +1,6 @@
 ---
+# TODO: authorized_keyを使う
+# https://docs.ansible.com/ansible/latest/modules/authorized_key_module.html
 - name: Check SSH key
   stat: path=~/.ssh/id_rsa
   register: check_ssh_key_result
