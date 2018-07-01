@@ -16,6 +16,7 @@ homebrew_packages:
   - { name: dnsmasq }
   - { name: embulk }
   - { name: erlang }
+  - { name: ffmpeg }
   - { name: fish }
   - { name: fzf }
   - { name: ghq }
