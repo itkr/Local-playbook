@@ -32,6 +32,7 @@ homebrew_packages:
   - { name: mysql }
   - { name: node }
   - { name: nodenv }
+  - { name: pandoc }
   - { name: peco }
   - { name: postgresql }
   - { name: presto }
