@@ -1,6 +1,7 @@
 ---
 homebrew_taps:
   - coteditor/coteditor
+  - homebrew/cask-fonts
   # - caskroom/cask
   # - homebrew/binary
   # - homebrew/dupes
@@ -63,6 +64,7 @@ homebrew_cask_packages:
   - { name: db-browser-for-sqlite }
   - { name: docker }
   - { name: dropbox }
+  - { name: font-ricty-diminished }
   - { name: google-chrome }
   - { name: google-cloud-sdk }
   - { name: google-japanese-ime }
