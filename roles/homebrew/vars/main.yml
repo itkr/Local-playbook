@@ -58,7 +58,6 @@ homebrew_cask_packages:
   - { name: alfred }
   - { name: android-studio }
   - { name: appcleaner }
-  - { name: atom }
   - { name: coteditor }
   - { name: dash }
   - { name: db-browser-for-sqlite }
@@ -85,6 +84,7 @@ homebrew_cask_packages:
   # - { name: amazon-drive }
   # - { name: android-file-transfer }
   # - { name: arduino }
+  # - { name: atom }
   # - { name: diskwave }
   # - { name: eclipse-installer }
   # - { name: evernote }
