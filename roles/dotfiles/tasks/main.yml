@@ -23,6 +23,7 @@
     - '.zshrc'
     - '.bash/'
     - '.iterm2/'
+    - '.config/'
   when: pull_dotfiles_result | changed
 
 - name: Import Karabiner settings
