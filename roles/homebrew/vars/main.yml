@@ -55,6 +55,7 @@ homebrew_packages:
 
 homebrew_cask_packages:
   - { name: java }  # 依存するものがあるのでjavaは最初
+  - { name: alacritty }
   - { name: alfred }
   - { name: android-studio }
   - { name: appcleaner }
