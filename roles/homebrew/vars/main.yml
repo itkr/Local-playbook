@@ -32,6 +32,7 @@ homebrew_packages:
   - { name: mas }
   - { name: mongodb }
   - { name: mysql }
+  - { name: neofetch }
   - { name: node }
   - { name: nodenv }
   - { name: pandoc }
