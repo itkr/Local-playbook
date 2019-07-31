@@ -27,6 +27,7 @@ homebrew_packages:
   - { name: go }
   - { name: hadoop }
   - { name: hive }
+  - { name: hub }
   - { name: jq }
   - { name: kotlin }
   - { name: mas }
