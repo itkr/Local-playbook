@@ -45,6 +45,7 @@ homebrew_packages:
   - { name: r }
   - { name: rbenv }
   - { name: redis }
+  - { name: sensy-isd-auth}
   - { name: ssh-copy-id }
   - { name: textql }
   - { name: the_silver_searcher }
