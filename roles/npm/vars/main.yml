@@ -3,3 +3,4 @@ npm_global_packages:
   # - { name: grunt-cli }
   - { name: babel-cli }
   - { name: firebase-tools }
+  - { name: typescript }
