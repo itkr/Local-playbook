@@ -20,6 +20,7 @@ homebrew_packages:
   - { name: erlang }
   - { name: ffmpeg }
   - { name: fish }
+  # - { name: franz }  # お試し
   - { name: fzf }
   - { name: ghq }
   - { name: git }
@@ -41,6 +42,7 @@ homebrew_packages:
   - { name: postgresql }
   - { name: presto }
   - { name: pstree }
+  - { name: pt }
   - { name: pyenv-virtualenv }
   - { name: r }
   - { name: rbenv }
