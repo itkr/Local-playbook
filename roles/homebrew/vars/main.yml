@@ -37,6 +37,7 @@ homebrew_packages:
   - { name: neofetch }
   - { name: node }
   - { name: nodenv }
+  - { name: nvim }
   - { name: pandoc }
   - { name: peco }
   - { name: postgresql }
