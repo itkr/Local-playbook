@@ -20,7 +20,6 @@ homebrew_packages:
   - { name: erlang }
   - { name: ffmpeg }
   - { name: fish }
-  # - { name: franz }  # お試し
   - { name: fzf }
   - { name: ghq }
   - { name: git }
@@ -31,6 +30,7 @@ homebrew_packages:
   - { name: hub }
   - { name: jq }
   - { name: kotlin }
+  - { name: libomp }  # pythonでデータ解析する際のlightgbmで使う
   - { name: mas }
   - { name: mongodb }
   - { name: mysql }
