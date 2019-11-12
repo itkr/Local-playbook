@@ -24,6 +24,7 @@
     - '.bash/'
     - '.iterm2/'
     - '.config/'
+    - '.vim/'
   when: pull_dotfiles_result | changed
 
 - name: Import Karabiner settings
