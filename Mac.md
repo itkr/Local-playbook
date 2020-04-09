@@ -57,3 +57,23 @@ brew install ghq
 ghq get git@github.com:itkr/Local-playbook.git
 ghq get git@github.com:itkr/dotfiles.git
 ```
+
+```
+ln -s ~/ghq ~/Projects
+```
+
+## ansible
+
+```
+brew install ansible
+```
+
+## iterm2
+
+ansibleに任せる？
+
+```
+export DIR_CONF='~/ghq/github.com/itkr/dotfiled/files/.iterm2'
+defaults write com.googlecode.iterm2 "LoadPrefsFromCustomFolder" -bool true
+defaults write com.googlecode.iterm2 "PrefsCustomFolder" -string ${DIR_CONF}
+```
