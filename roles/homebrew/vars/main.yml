@@ -1,7 +1,7 @@
 ---
 homebrew_taps:
-  - coteditor/coteditor
-  - homebrew/cask-fonts
+  # - coteditor/coteditor
+  # - homebrew/cask-fonts
   # - caskroom/cask
   # - homebrew/binary
   # - homebrew/dupes
