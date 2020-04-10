@@ -9,6 +9,8 @@
 ## 最低限のキーボード設定
 
 システム環境設定 -> キーボード -> キーボード -> 装飾キー -> Apple内蔵キーボード/トラックパッド (Caps Lockキー: Control)
+システム環境設定 -> キーボード -> キーボード -> キーのリピート -> 早い
+システム環境設定 -> キーボード -> キーボード -> リピート入力認識までの時間 -> 早い
 
 ## homebrewのインストール (terminal.app)
 
@@ -62,6 +64,10 @@ ghq get git@github.com:itkr/dotfiles.git
 ln -s ~/ghq ~/Projects
 ```
 
+```
+mkdir ~/.vim/tmp
+```
+
 ## ansible
 
 ```
@@ -77,3 +83,15 @@ export DIR_CONF='~/ghq/github.com/itkr/dotfiled/files/.iterm2'
 defaults write com.googlecode.iterm2 "LoadPrefsFromCustomFolder" -bool true
 defaults write com.googlecode.iterm2 "PrefsCustomFolder" -string ${DIR_CONF}
 ```
+
+## IME
+
+```
+brew cask install google-japanese-ime
+```
+
+システム環境設定 -> キーボード -> キーボード -> 入力ソース -> +
+
+## 時計
+
+秒表示・日付表示
