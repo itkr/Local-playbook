@@ -35,15 +35,15 @@ homebrew_packages:
   - { name: nodenv }
   - { name: rbenv }
   - { name: redis }
-  # - { name: pstree }  # プロセスツリーを表示する
-  # - { name: pandoc }  # reStructuredTextやMarkdownを変換する
+  - { name: pstree }  # プロセスツリーを表示する
+  - { name: pandoc }  # reStructuredTextやMarkdownを変換する
   # 解析
   # - { name: apache-spark }
   # - { name: embulk }
   # - { name: hadoop }
   # - { name: hive }
   # - { name: presto }
-  # - { name: r }
+  - { name: r }
   # DB・言語・シェル
   # - { name: erlang }
   # - { name: fish }
