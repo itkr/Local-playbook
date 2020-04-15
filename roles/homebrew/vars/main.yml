@@ -1,54 +1,25 @@
 ---
 homebrew_taps:
-  # - coteditor/coteditor
-  # - homebrew/cask-fonts
   # - caskroom/cask
+  # - coteditor/coteditor
   # - homebrew/binary
   # - homebrew/dupes
   # - homebrew/science
+  - homebrew/cask-fonts
 
 homebrew_packages:
-  - { name: ansible }
-  - { name: apache-spark }
+  # 1軍
   - { name: awscli }
-  - { name: bat }
-  - { name: coreutils }
-  - { name: cot }
-  - { name: ctags }
-  - { name: dnsmasq }
-  - { name: embulk }
-  - { name: erlang }
-  - { name: ffmpeg }
-  - { name: fish }
   - { name: fzf }
   - { name: ghq }
   - { name: git }
-  - { name: glide }
   - { name: go }
-  - { name: hadoop }
-  - { name: hive }
   - { name: hub }
   - { name: jq }
-  - { name: kotlin }
-  - { name: libomp }  # pythonでデータ解析する際のlightgbmで使う
-  - { name: mas }
-  - { name: mongodb }
-  - { name: mysql }
-  - { name: neofetch }
+  - { name: ansible }
   - { name: node }
-  - { name: nodenv }
-  - { name: nvim }
-  - { name: pandoc }
-  - { name: peco }
-  - { name: postgresql }
-  - { name: presto }
-  - { name: pstree }
   - { name: pt }
   - { name: pyenv-virtualenv }
-  - { name: r }
-  - { name: rbenv }
-  - { name: redis }
-  - { name: sensy-isd-auth}
   - { name: ssh-copy-id }
   - { name: textql }
   - { name: the_silver_searcher }
@@ -56,18 +27,48 @@ homebrew_packages:
   - { name: tree }
   - { name: vim }
   - { name: wget }
+  # 2軍
+  - { name: bat }  # 強いcat
+  - { name: coreutils }
+  - { name: ctags }
+  - { name: libomp }  # pythonでデータ解析する際のlightgbmで使う
+  - { name: nodenv }
+  - { name: rbenv }
+  - { name: redis }
+  # - { name: pstree }  # プロセスツリーを表示する
+  # - { name: pandoc }  # reStructuredTextやMarkdownを変換する
+  # 解析
+  # - { name: apache-spark }
+  # - { name: embulk }
+  # - { name: hadoop }
+  # - { name: hive }
+  # - { name: presto }
+  # - { name: r }
+  # DB・言語・シェル
+  # - { name: erlang }
+  # - { name: fish }
+  # - { name: kotlin }
+  # - { name: mongodb }
+  # - { name: mysql }
+  # - { name: postgresql }
+  # 3軍
+  # - { name: cot }
   # - { name: cowsay }
+  # - { name: dnsmasq }
+  # - { name: ffmpeg }
   # - { name: gdp }
+  # - { name: glide }  # goのパッケージ管理
+  # - { name: mas }  # App Store のパッケージ管理
+  # - { name: neofetch }  # OSのロゴとシステム情報を表示する
+  # - { name: nvim }
+  # - { name: peco }
+  # - { name: sensy-isd-auth}
 
 homebrew_cask_packages:
+  # 0軍
   - { name: java }  # 依存するものがあるのでjavaは最初
-  - { name: alacritty }
+  # 1軍
   - { name: alfred }
-  - { name: android-studio }
-  - { name: appcleaner }
-  - { name: coteditor }
-  - { name: dash }
-  - { name: db-browser-for-sqlite }
   - { name: docker }
   - { name: dropbox }
   - { name: font-ricty-diminished }
@@ -76,37 +77,47 @@ homebrew_cask_packages:
   - { name: google-japanese-ime }
   - { name: hyperswitch }
   - { name: iterm2 }
-  - { name: kindle }
-  - { name: macvim }
-  - { name: michaelvillar-timer }
-  - { name: pg-commander }
-  - { name: pycharm-ce }
-  - { name: rstudio }
-  - { name: sequel-pro }
   - { name: showyedge }
   - { name: slack }
   - { name: vagrant }
-  - { name: visual-studio-code }
+  # 2軍
+  - { name: dash }
+  - { name: db-browser-for-sqlite }
+  - { name: kindle }
+  - { name: michaelvillar-timer }
   - { name: vlc }
+  # 2.5軍
+  # - { name: android-studio }
+  # - { name: appcleaner }
+  # - { name: coteditor }
+  # - { name: macvim }
+  # - { name: pg-commander }
+  # - { name: pycharm-ce }
+  # - { name: rstudio }
+  # - { name: sequel-pro }
+  # - { name: visual-studio-code }
+  # 3軍
+  # - { name: alacritty }
   # - { name: amazon-drive }
   # - { name: android-file-transfer }
   # - { name: arduino }
-  # - { name: atom }
   # - { name: diskwave }
   # - { name: eclipse-installer }
   # - { name: evernote }
   # - { name: gitter }
   # - { name: gogland }
   # - { name: google-drive }
-  # - { name: hipchat }
   # - { name: intellij-idea-ce }
-  # - { name: karabiner-elements }
   # - { name: mongohub }
   # - { name: processing }
   # - { name: rdm }
   # - { name: sony-ericsson-bridge }
-  # - { name: steam }
   # - { name: vimpager }
   # - { name: virtualbox }  # vagrang入れたら入る？
   # - { name: visual-studio }
   # - { name: wireshark }
+  # 4軍
+  # - { name: atom }
+  # - { name: hipchat }
+  # - { name: karabiner-elements }
+  # - { name: steam }
