@@ -83,6 +83,7 @@ homebrew_cask_packages:
   # 2軍
   - { name: dash }
   - { name: db-browser-for-sqlite }
+  - { name: font-hack-nerd-font }
   - { name: kindle }
   - { name: michaelvillar-timer }
   - { name: vlc }
