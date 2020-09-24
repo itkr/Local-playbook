@@ -71,6 +71,7 @@ homebrew_cask_packages:
   - { name: alfred }
   - { name: docker }
   - { name: dropbox }
+  - { name: font-hack-nerd-font }
   - { name: font-ricty-diminished }
   - { name: google-chrome }
   - { name: google-cloud-sdk }
