@@ -9,6 +9,7 @@ homebrew_taps:
 
 homebrew_packages:
   # 1軍
+  - { name: ansible }
   - { name: awscli }
   - { name: fzf }
   - { name: ghq }
@@ -16,7 +17,6 @@ homebrew_packages:
   - { name: go }
   - { name: hub }
   - { name: jq }
-  - { name: ansible }
   - { name: node }
   - { name: pt }
   - { name: pyenv-virtualenv }
@@ -28,15 +28,16 @@ homebrew_packages:
   - { name: vim }
   - { name: wget }
   # 2軍
+  - { name: azure-cli }
   - { name: bat }  # 強いcat
   - { name: coreutils }
   - { name: ctags }
   - { name: libomp }  # pythonでデータ解析する際のlightgbmで使う
   - { name: nodenv }
+  - { name: pandoc }  # reStructuredTextやMarkdownを変換する
+  - { name: pstree }  # プロセスツリーを表示する
   - { name: rbenv }
   - { name: redis }
-  - { name: pstree }  # プロセスツリーを表示する
-  - { name: pandoc }  # reStructuredTextやMarkdownを変換する
   # 解析
   # - { name: apache-spark }
   # - { name: embulk }
