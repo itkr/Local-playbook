@@ -4,3 +4,4 @@ npm_global_packages:
   - { name: babel-cli }
   - { name: firebase-tools }
   - { name: typescript }
+  - { name: yarn }
