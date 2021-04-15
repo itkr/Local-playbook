@@ -32,6 +32,7 @@ homebrew_packages:
   - { name: bat }  # 強いcat
   - { name: coreutils }
   - { name: ctags }
+  - { name: gh }  # github
   - { name: libomp }  # pythonでデータ解析する際のlightgbmで使う
   - { name: nodenv }
   - { name: pandoc }  # reStructuredTextやMarkdownを変換する
