@@ -12,10 +12,10 @@ homebrew_packages:
   - { name: ansible }
   - { name: awscli }
   - { name: fzf }
+  - { name: gh }  # github
   - { name: ghq }
   - { name: git }
   - { name: go }
-  - { name: hub }
   - { name: jq }
   - { name: node }
   - { name: pt }
@@ -24,7 +24,6 @@ homebrew_packages:
   - { name: textql }
   - { name: the_silver_searcher }
   - { name: tmux }
-  - { name: tree }
   - { name: vim }
   - { name: wget }
   # 2軍
@@ -32,13 +31,13 @@ homebrew_packages:
   - { name: bat }  # 強いcat
   - { name: coreutils }
   - { name: ctags }
-  - { name: gh }  # github
   - { name: libomp }  # pythonでデータ解析する際のlightgbmで使う
   - { name: nodenv }
   - { name: pandoc }  # reStructuredTextやMarkdownを変換する
   - { name: pstree }  # プロセスツリーを表示する
   - { name: rbenv }
   - { name: redis }
+  - { name: tree }
   # 解析
   # - { name: apache-spark }
   # - { name: embulk }
@@ -60,6 +59,7 @@ homebrew_packages:
   # - { name: ffmpeg }
   # - { name: gdp }
   # - { name: glide }  # goのパッケージ管理
+  # - { name: hub }  # github (ghへ乗り換え)
   # - { name: mas }  # App Store のパッケージ管理
   # - { name: neofetch }  # OSのロゴとシステム情報を表示する
   # - { name: nvim }
@@ -73,7 +73,6 @@ homebrew_cask_packages:
   - { name: alfred }
   - { name: docker }
   - { name: dropbox }
-  - { name: font-hack-nerd-font }
   - { name: font-ricty-diminished }
   - { name: google-chrome }
   - { name: google-cloud-sdk }
@@ -86,7 +85,6 @@ homebrew_cask_packages:
   # 2軍
   - { name: dash }
   - { name: db-browser-for-sqlite }
-  - { name: font-hack-nerd-font }
   - { name: kindle }
   - { name: michaelvillar-timer }
   - { name: vlc }
@@ -108,6 +106,7 @@ homebrew_cask_packages:
   # - { name: diskwave }
   # - { name: eclipse-installer }
   # - { name: evernote }
+  # - { name: font-hack-nerd-font }
   # - { name: gitter }
   # - { name: gogland }
   # - { name: google-drive }
