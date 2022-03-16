@@ -14,15 +14,13 @@ homebrew_packages:
   - { name: fzf }
   - { name: gh }  # github
   - { name: ghq }
-  - { name: git }
   - { name: go }
   - { name: jq }
   - { name: node }
-  - { name: pt }
   - { name: pyenv-virtualenv }
   - { name: ssh-copy-id }
   - { name: textql }
-  - { name: the_silver_searcher }
+  - { name: the_silver_searcher }  # ag
   - { name: tmux }
   - { name: vim }
   - { name: wget }
@@ -59,11 +57,14 @@ homebrew_packages:
   # - { name: ffmpeg }
   # - { name: gdp }
   # - { name: glide }  # goのパッケージ管理
-  # - { name: hub }  # github (ghへ乗り換え)
   # - { name: mas }  # App Store のパッケージ管理
   # - { name: neofetch }  # OSのロゴとシステム情報を表示する
   # - { name: nvim }
-  # - { name: peco }
+  # やめた
+  # - { name: git }  # 最近はもともと入ってる
+  # - { name: hub }  # github (ghへ乗り換え)
+  # - { name: peco }  # fzf使う
+  # - { name: pt }  # agかptかどちらかでいい
   # - { name: sensy-isd-auth}
 
 homebrew_cask_packages:
