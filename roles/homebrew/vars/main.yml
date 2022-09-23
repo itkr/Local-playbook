@@ -89,6 +89,7 @@ homebrew_cask_packages:
   - { name: kindle }
   - { name: michaelvillar-timer }
   - { name: vlc }
+  - { name: kaycastr }
   # 2.5軍
   # - { name: android-studio }
   # - { name: appcleaner }
